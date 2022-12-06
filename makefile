@@ -9,7 +9,6 @@ format:
 	black *.py dblib/*py
 
 lint:
-	pylint --disable=R,C --ignore-patterns=test_.*?py *.py dblib
-	#pylint --disable=R,C *.py
+	pylint --disable=R,C --ignore-patterns=test_.*?py *.py
 
-all: install lint test
+all: install lint test format

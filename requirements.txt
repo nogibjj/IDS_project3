@@ -3,4 +3,10 @@ pylint
 pandas
 faker
 sqlalchemy
-sqlite3
+click
+ipython
+fastapi
+uvicorn[standard]
+jupyter
+streamlit
+pytest-cov
