@@ -3,11 +3,12 @@ import os
 from faker import Faker
 
 connection = sqlite3.connect('test_sample.db')
-
-
+drop_table = 'DROP TABLE IF EXISTS people'
 table = 'CREATE TABLE people (id integer primary key, name TEXT, surname TEXT)'
 
 cursor = connection.cursor()
+cursor.execute(drop_table)
+cursor.execute(table)
 
 #cursor.execute(table)
 
