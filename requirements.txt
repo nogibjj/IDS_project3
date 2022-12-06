@@ -1,4 +1,5 @@
 pytest
+python
 pylint
 pandas
 faker
