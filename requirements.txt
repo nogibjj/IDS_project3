@@ -1,0 +1,6 @@
+pytest
+pylint
+pandas
+faker
+sqlalchemy
+sqlite3
