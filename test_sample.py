@@ -34,3 +34,5 @@ for name in names:
 select_query = 'SELECT * from people LIMIT 6'
 for i in cursor.execute(select_query):
     print(i)
+
+
