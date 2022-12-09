@@ -1,5 +1,10 @@
+import fastapi
 from fastapi import FastAPI
 import uvicorn
+import pandas as pd
+
+import literacy_create
+
 
 app = FastAPI()
 
@@ -17,12 +22,6 @@ async def add(num1: int, num2: int):
     return {"total": total}
 
 
-@app.get("/query")
-async def query():
-    """Execute a SQL query"""
-
-    result = querydb()
-    return {"result": result}
 
 
 if __name__ == "__main__":
