@@ -59,7 +59,7 @@ for i in cursor.execute(query2):
 #select top 10 countries with highest literacy rate
 
 print(f"Top 10 Countries with highest literacy rate:")
-query3 = """SELECT country, literacy_rate FROM literacy_rates ORDER BY literacy_rate DESC LIMIT 10;"""
+query3 = """SELECT distinct country, literacy_rate FROM literacy_rates ORDER BY literacy_rate DESC LIMIT 10;"""
 
 for i in cursor.execute(query3):
     print(i)
