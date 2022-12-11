@@ -11,7 +11,7 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "Welcome to Airbnb Dataset in Databricks"}
+    return {"message": "Welcome to Literacy rates Dataset "}
 
 
 @app.get("/add/{num1}/{num2}")
